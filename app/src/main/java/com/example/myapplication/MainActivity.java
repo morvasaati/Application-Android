@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     VideoView vid;
     MediaController mediac;
     Button inst;
+    String st;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -25,10 +26,14 @@ public class MainActivity extends AppCompatActivity {
          clk = (Button) findViewById(R.id.btnPlay);
          mediac = new MediaController(this);
          inst = (Button) findViewById(R.id.btninst);
+         st = getIntent().getExtras().getString("Value");
         inst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShowInstruction();
+                Intent intent = new Intent(MainActivity.this, Instruction.class);
+                intent.putExtra("Value2" , st );
+                startActivity(intent);
+                //ShowInstruction();
             }
         });
     }
@@ -44,4 +49,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Instruction.class);
         startActivity(intent);
     }
+
 }
+

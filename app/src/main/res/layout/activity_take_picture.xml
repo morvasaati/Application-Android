@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,27 +11,35 @@
     <ProgressBar
         android:id="@+id/progressbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_height="20dip"
+        android:layout_marginTop="50dp"
         style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
 
     <TextView
         android:id="@+id/loadingCompleteTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
         android:visibility="visible" />
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="196dp"
-        android:layout_height="226dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
         app:srcCompat="@drawable/a" />
+
 
     <Button
         android:id="@+id/btnTakePic"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom= "true"
         android:text="Take Picture" />
 
-</LinearLayout>
+
+</RelativeLayout>
+

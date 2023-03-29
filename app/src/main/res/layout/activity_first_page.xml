@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    android:background="@drawable/background2"
+    tools:context=".FirstPage">
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_gravity="center"
+        android:includeFontPadding="false"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_vertical"
+        android:textStyle="bold|italic"
+        android:text="How well do you know your leaves?"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type your Name"
+        android:id="@+id/edittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnWatchVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="watch video" />
+
+
+</RelativeLayout>

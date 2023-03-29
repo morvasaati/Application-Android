@@ -14,7 +14,8 @@ public class Randompicture extends AppCompatActivity {
 
     ImageView imageView;
     Button button_takephoto;
-    int[] images = {R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d};
+    int[] images = {R.drawable.e, R.drawable.f, R.drawable.g, R.drawable.h, R.drawable.i, R.drawable.j,
+            R.drawable.k, R.drawable.l, R.drawable.m, R.drawable.n};
     Random rand = new Random();
 
     @Override
